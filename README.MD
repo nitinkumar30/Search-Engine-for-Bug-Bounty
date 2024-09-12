@@ -4,7 +4,7 @@ Welcome to the **Bug Bounty Search Engine**! 🕵️‍♂️🔍 This tool is d
 
 ## Options available ☠️
 
-![1726143851149](image/1726143851149.png)
+![Screenshot working](media/image.png)
 
 ## Features 🚀
 
