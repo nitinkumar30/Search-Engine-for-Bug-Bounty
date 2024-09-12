@@ -1,0 +1,231 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+         
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.button-column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 10px;
+}
+
+.futuristic-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    background-color: #b1f0f0;
+    border: 2px solid #abd30d;
+    color: #1620e7;
+    transition: all 0.3s ease;
+}
+
+.futuristic-button:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.search-label {
+    font-size: 18px;
+    color: #74f906;
+    margin-right: 10px;
+}
+
+.search-input {
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #12f430;
+    border-radius: 4px;
+    background-color: transparent;
+    color: #aaf008;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.center-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+}
+
+.center-container img {
+display: block;
+margin: 0 auto;
+}
+
+.input-container {
+display: flex;
+align-items: center; /* Vertically align elements */
+justify-content: center; /* Horizontally center elements */
+width: 450px; /* Adjust as needed */
+margin: 0 auto; /* Center the container on the page */
+padding: 20px;
+border-radius: 5px;
+background-color: #0e0f1052;
+border: 1px solid #26d2d2;
+}
+
+.input-container label {
+margin-right: 10px; /* Add some space between label and input */
+font-weight: bold;
+font-size: 1.2em;
+color: white;
+}
+
+.input-container input {
+padding: 7px;
+border: 1px aqua solid;
+color: #8cd4e6;
+outline: none;
+font-size: 16px;
+background: #000000;
+
+}
+   
+.buttons {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+/* Container for the typewriter effect */
+.typewriter {
+    display: inline-block; /* Ensures the container only takes up as much space as needed */
+    position: relative;
+    font-size: 150%;
+    overflow: hidden; /* Hides the text initially */
+    white-space: nowrap; /* Keeps the text on a single line */
+    border-right: 0.15em solid orange; /* Creates the blinking cursor effect */
+    font-family: monospace; /* Gives a typewriter-like appearance */
+    letter-spacing: 0.15em; /* Adds spacing between letters */
+    animation: typing 6s steps(30, end), blink-caret 0.75s step-end infinite; /* Animations */
+    color: #44f70e;
+
+    /* Optional: Set a specific width or max-width */
+    max-width: 100%; /* Ensures it doesn’t overflow its container */
+    box-sizing: border-box; /* Includes border in width calculation */
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Keyframes for cursor blinking effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+.portfolio-back{
+    text-align: center;
+    position: center;
+    padding-left: 25%;
+    padding-bottom: 10%;
+}
+
+.portfolio{
+    width: 50%;
+    height: 94%;
+}
+
+.portfolio:hover{
+    border-color: #12f430;
+    border-width: 20px;
+    box-shadow: 0 0 500px rgba(3, 230, 18, 0.3);
+}
+
+/* -------------Loader--------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.line{
+    width: 500px;
+    height: 12px;
+    background-color: rgb(243, 243, 243);
+    border-radius:50px;
+    position: relative;
+}
+.line::before{
+    content: '';
+    position:absolute;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background: #8E2DE2;  
+    border-radius:50px;
+    background: linear-gradient(to right, #4A00E0, #8E2DE2); 
+    animation:  anim 2s;
+}
+@keyframes anim {
+    0%{
+        width: 0%;
+    }
+    20%{
+        width: 5%;
+    }
+    50%{
+        width: 25%;
+    }
+    60%{
+        width: 35%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+p{
+    font-size: 5rem;
+    font-family: 'Lobster', cursive;
+    color: rgba(51, 51, 51);
+    margin-bottom: 15px;
+}
