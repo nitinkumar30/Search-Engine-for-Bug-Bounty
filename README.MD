@@ -121,7 +121,7 @@ Welcome to the **Bug Bounty Search Engine**! 🕵️‍♂️🔍 This tool is d
 
 ## Installation 🔧
 
-To use the Bug Bounty Search Engine, simply open the [HTML file](searchEngineForBugBounty.html) in any modern web browser. No installation is required.
+To use the Bug Bounty Search Engine, simply open the [HTML file](index.html) in any modern web browser. No installation is required.
 
 ## Contributing 🤝
 
